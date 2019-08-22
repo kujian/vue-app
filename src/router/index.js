@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import home from '@/components/home'
 import vIf from '@/components/v-if'
+import vee from '@/components/vee'
 
 import VueResource from 'vue-resource'
 
@@ -23,5 +24,9 @@ export default new Router({
     path: '/v-if',
     name: 'v-if',
     component: vIf
+  }, {
+    path: '/vee',
+    name: 'vee',
+    component: vee
   }]
 })

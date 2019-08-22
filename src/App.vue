@@ -11,8 +11,15 @@
         <li class="nav-item">
           <router-link class="nav-link" to="/v-if">v-if</router-link>
         </li>
+        <li class="nav-item">
+          <router-link class="nav-link" to="/vee">Form validate</router-link>
+        </li>
       </ul>
     </div>
+
+    <p>测试兄弟节点</p>
+    <Brother1 />
+    <Brother2 />
     <div class="container">
       <transition name="moveInUp">
         <router-view/>
@@ -27,11 +34,15 @@
   import EmployeeTable from '@/components/EmployeeTable.vue';
   //添加表单组件
   import EmployeeForm from '@/components/EmployeeForm.vue';
+  import Brother1 from '@/components/Demo1.vue';
+  import Brother2 from '@/components/Demo2.vue';
   export default {
     name: 'app',
     components: {
       EmployeeTable,
-      EmployeeForm
+      EmployeeForm,
+      Brother1,
+      Brother2
     },
     data() {
       return {
